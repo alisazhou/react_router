@@ -7,7 +7,8 @@ export default class App extends React.Component {
     return (
       <div className="app">
         <nav>
-          <Link to="/">Home</Link>
+          <Link to="/">Home</Link><br />
+          <Link to="/widgets">Widgets</Link><br />
           <Link to="/users">Users</Link>
         </nav>
         <main>
