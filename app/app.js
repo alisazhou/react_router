@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, browserHistory} from 'react-router';
 
+import App from 'layouts/app';
 import Home from 'ui/home';
 import Users from 'ui/users';
 
 
 ReactDOM.render((
   <Router history={browserHistory}>
-    <Route path="/" component={Home} />
-    <Route path="/users" component={Users} />
+    <Route component={App}>
+      <Route path="/" component={Home} />
+      <Route path="/users" component={Users} />
+    </Route>
   </Router>
 ), document.getElementById('root'));
